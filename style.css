@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family: Open Sans Condensed; /* Гарнитура шрифта */
+    src: url(fonts/open-sans-condensed-v15-latin/open-sans-condensed-v15-latin-300.ttf); /* Путь к файлу со шрифтом */
+}
+html,body{
+    font-family: 'PT Sans'; 
+    height: 100%;   
+}
+body{
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    flex:1 0 auto;
+}
+.footer{
+    flex-shrink: 0;
+
+}
+.container{
+    width: 980px;
+    padding-inline: 10px;
+    margin: 0 auto;
+}
+header{
+    background-color: #dcdcdc;
+    padding-top: 51px;
+    padding-left: 15px;
+    padding-bottom: 60px;
+}
+.logo{
+    margin: -4px 0 0 -8px;
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+}
+.fnumber{
+    font-family: 'Open Sans Condensed';
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #767676;
+    margin: 5px 7px 0 0;
+    float: right;
+    margin-left: auto;
+    text-align: right;
+}
+.afeedback{
+    font-family: 'PT Sans';
+    font-size: 24px;   
+    font-weight: 700;
+    margin-top:-6px;
+}
+header a{
+    color: #767676;
+    border-bottom: 2px #767676 dashed;
+}
+header a:hover{
+    text-decoration:none;
+
+}
+.menu{
+    background-color: #777777;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: -15px;
+    padding: 15px 0 26px 7px;
+
+    position: relative;
+    z-index: 100;
+}
+.list{
+    margin: 0px;
+    padding-left: 0px;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+}
+ul li{
+    display: inline;
+    list-style:none;
+}
+span{
+      padding: 0 10px;
+}
+a{ 
+	text-decoration: none; /* Убираем подчеркивание у ссылок */
+	color: #FFFFFF; /* Цвет ссылки */
+    text-decoration-skip-ink: none;
+}
+a:hover { 
+  text-decoration: underline; /* Добавляем подчеркивание при наведении курсора мыши на ссылку */
+}
+.slider{
+    text-align: center;
+    margin: -62px 0 0 11px;
+    position: relative;
+    /*z-index: -100;*/
+
+    position: relative;
+}
+
+.slick-track{
+    display: flex;
+}
+.slick-hist{
+    overflow: hidden;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+
+}
+.slider .slick-arrow.slick-prev{
+    left:0;
+    background: url('../third_layout-copy/img/sl-arrow_l.png') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('../third_layout-copy/img/sl-arrow_r.png') 0 0 / 100% no-repeat;
+}
+
+footer{
+    background-color: #777777;
+    color: #FFFFFF;    
+    font-size: 14px;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 75px;
+}
+.email{
+    margin-top: -20px;
+}
+footer ul{
+    padding: 0px;
+    margin: 42px 0px -27px 0;
+ 
+}
+footer ul li{
+    list-style:none;
+    display: block;
+    text-decoration: underline;
+    
+    font-family: 'PT Sans';font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.025em;
+}
+a.f-menu{
+    color: #FFFFFF; /* Цвет ссылки */
+    text-decoration-skip-ink: none;
+}
+footer img{
+    width: 36px;height: 38px;
+    margin-top: 5px;
+}
+.End{
+    display: flex;
+    gap:10px;
+    padding-right: 17px;
+    padding-bottom: 0px;
+
+}
+footer p{
+    margin-top: 0px;
+}
