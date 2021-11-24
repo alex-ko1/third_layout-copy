@@ -68,7 +68,7 @@ header {
     margin-top: -6px;
 }
 
-header a {
+header .afeedback a {
     color: #767676;
     border-bottom: 2px #767676 dashed;
 }
@@ -98,7 +98,7 @@ header a:hover {
     color: #FFFFFF;
 }
 
-ul li {
+.menu ul li {
     display: inline;
     list-style: none;
 }
@@ -175,6 +175,122 @@ a:hover {
     text-decoration: underline;
 }
 
+.content {}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftblock {}
+
+.list__menu {
+    padding: 0;
+}
+
+.list__menu a {
+    font-family: 'PT Sans';
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #767676;
+}
+
+.list__menu li {
+    position: relative;
+}
+
+.list__menu>li {
+    list-style: none;
+}
+
+.list__menu>li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: relative;
+    left: 0;
+    padding-left: 19px;
+    margin-top: -3px;
+}
+
+.sub-menu li {
+    list-style: disc;
+    color: #767676;
+}
+
+.sub-menu a {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.img_excel {
+    width: 97px;
+    height: 111px;
+}
+
+.centerblock {
+    flex-direction: column;
+}
+
+.centerblock-wrapper {
+    display: flex;
+    width: 780px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 26px;
+}
+
+.product {
+    background-color: #dcdcdc;
+    width: 250px;
+    height: 380px;
+    font-family: 'PT Sans';
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #767676;
+}
+
+.img-catalog {
+    padding: 20px 0 0 20px;
+}
+
+.under-img {
+    font-family: 'PT Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: #767676;
+    padding-left: 20px;
+    margin-top: 14px;
+}
+
+.price {
+    font-family: 'PT Sans';
+    font-size: 28px;
+    font-weight: 700;
+    color: #444444;
+    padding: 13px 0 0 17px;
+}
+
+.flex-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addtobasket {
+    width: 28px;
+    height: 21px;
+    padding-top: 43px;
+    padding-right: 36px;
+}
+
+.num-page {}
+
 footer {
     background-color: #777777;
     color: #FFFFFF;
@@ -199,7 +315,6 @@ footer ul {
 
 footer ul li {
     list-style: none;
-    display: block;
     text-decoration: underline;
     font-family: 'PT Sans';
     font-size: 14px;
