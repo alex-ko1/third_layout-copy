@@ -36,7 +36,7 @@ header {
     background-color: #dcdcdc;
     padding-top: 51px;
     padding-left: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 42px;
 }
 
 .logo {
@@ -82,7 +82,7 @@ header a:hover {
     justify-content: space-between;
     text-align: center;
     margin-bottom: -15px;
-    padding: 15px 0 26px 7px;
+    padding: 15px 0 29px 7px;
     position: relative;
     z-index: 1000;
 }
@@ -168,6 +168,7 @@ a:hover {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #767676;
+    padding-top: 15px;
 }
 
 .breadcrumbs a {
@@ -215,6 +216,7 @@ a:hover {
     left: 0;
     padding-left: 19px;
     margin-top: -3px;
+    padding-bottom: 2px;
 }
 
 .sub-menu li {
@@ -230,17 +232,32 @@ a:hover {
 .img_excel {
     width: 97px;
     height: 111px;
+    position: absolute;
+    top: 1123px;
+    padding-left: 43px;
+    display: block;
+}
+
+.price-list {
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #444444;
+    text-align: -moz-center;
 }
 
 .centerblock {
     flex-direction: column;
+    border-bottom: 1px solid #696969;
+    padding-bottom: 46px;
 }
 
 .centerblock-wrapper {
     display: flex;
     width: 780px;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px 15px;
     padding-top: 26px;
 }
 
@@ -285,11 +302,49 @@ a:hover {
 .addtobasket {
     width: 28px;
     height: 21px;
-    padding-top: 43px;
-    padding-right: 36px;
+    margin-top: 43px;
+    margin-right: 36px;
 }
 
-.num-page {}
+.num-page {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.565em;
+    color: #767676;
+    margin-top: 31px;
+}
+
+.num-page ul li {
+    display: inline;
+    list-style: none;
+}
+
+.num-hover:hover {
+    cursor: pointer;
+    font-size: 18px;
+    color: #444444;
+}
+
+.company {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #767676;
+}
+
+.company-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0 199px;
+    margin-bottom: 185px;
+}
+
+.company2 {
+    padding-left: 60px;
+}
 
 footer {
     background-color: #777777;
@@ -343,4 +398,101 @@ footer img {
 
 footer p {
     margin-top: 0px;
+}
+
+.popup {
+    z-index: 1002;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup_content {
+    background-color: #fff;
+    color: #535353;
+    max-width: 466px;
+    padding: 25px 63px;
+    position: relative;
+}
+
+.popup_title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.popup_close {
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+    width: 27px;
+    height: 27px;
+    background-color: #777777;
+}
+
+.popup_text {
+    text-align: center;
+}
+
+.popup_close img {
+    margin: 6px;
+}
+
+.massage {
+    padding-bottom: 20px;
+}
+
+.popup_content input {
+    width: 341px;
+    height: 42px;
+    border: 1px solid #c3c3c3;
+}
+
+.popup_content input.submit {
+    border: none;
+    color: #fff;
+    background-color: #777777;
+    font-size: 17.8px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 128px;
+    height: 42px;
+}
+
+input::placeholder {
+    margin-left: 10px;
+}
+
+.popup_content input:focus-within {
+    border-color: red;
+    box-shadow: inset 0 0 6px red;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
 }
